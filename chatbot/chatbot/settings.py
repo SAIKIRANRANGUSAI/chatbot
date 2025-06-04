@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chatapp',
     'dashboard',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,13 @@ DATABASES = {
         'PASSWORD': 'Sai@8978',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+    },
+
+    'sqlite_db': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+
 }
 
 
